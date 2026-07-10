@@ -24,13 +24,21 @@ Input: "Can we meet tomorrow?"
  😊Project Structure 
 
 spam-detection-naive-bayes/
+
 ├── data_preparation.py
+
 ├── feature_extraction.py
+
 ├── naive_bayes_classifier.py
+
 ├── main.py
+
 ├── download_dataset.py
+
 ├── spam.csv
+
 ├── confusion_matrix.png
+
 └── requirements.txt
 
 • How Naive Bayes Works 
