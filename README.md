@@ -12,7 +12,7 @@ Loads and cleans SMS data
 Extracts text features (TF-IDF)
 Trains Naive Bayes model
 Evaluates performance
-Predicts new messages with confidence scores
+Predicts new messages with confidence scor
 Example:
 Code
 Input: "You won FREE iPhone! Click NOW!!!"
@@ -20,3 +20,25 @@ Input: "You won FREE iPhone! Click NOW!!!"
 
 Input: "Can we meet tomorrow?"
 → Output: ✓ HAM (99.8% confidence)
+
+ 😊Project Structure 
+
+spam-detection-naive-bayes/
+├── data_preparation.py
+├── feature_extraction.py
+├── naive_bayes_classifier.py
+├── main.py
+├── download_dataset.py
+├── spam.csv
+├── confusion_matrix.png
+└── requirements.txt
+
+• How Naive Bayes Works 
+
+Bayes' Theorem: P(Spam|Message) = P(Message|Spam) × P(Spam) / P(Message)
+
+Features: Words and their frequencies (TF-IDF scores)
+
+Training: Learns probability of each word appearing in spam vs. ham
+
+Prediction: Calculates probability message is spam based on its words
